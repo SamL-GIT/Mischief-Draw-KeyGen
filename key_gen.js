@@ -5,8 +5,7 @@ const readline = require('readline').createInterface({
 });
 
 readline.question('Enter the target Email to Generate The Product Key : ', mail => {
-    let key = genKey(mail)
-    console.log(`Your Key is ${key} for Email : ${mail}`);
+    console.log(`Your Key is ${genKey(mail)} for Email : ${mail}`);
     readline.close();
 });
 function genKey(email) {
